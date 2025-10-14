@@ -70,11 +70,9 @@ case 7:
 
 console.log(opcion1 + " " + opcion2 + " " + opcion3 + " " + opcion4);  
 
-    boton1 = document.getElementById(opcion1);
-    boton2 = document.getElementById(opcion2);
-    boton3 = document.getElementById(opcion3);
-    boton4 = document.getElementById(opcion4);
+    botones = document.getElementsByClassName("botones");
 
+/*
 
 boton1.addEventListener("click", function() {
     document.getElementById(document.getElementById("nulo").parentNode.id).innerHTML = "<img src='imgs/0"+boton1.id+".jpg'></img>"
@@ -99,7 +97,7 @@ if(opcion4 != 0){
     document.getElementById(boton4.id).innerHTML = "<img id = 'nulo' src='imgs/09.jpg'></img>";
 getbuttons();
 });
-}
+}*/
 }
   
 
