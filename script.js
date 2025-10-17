@@ -7,7 +7,7 @@
             posicionNula = document.getElementById("nulo").parentNode.id;
             console.log("Posición Nula: " + posicionNula);
             const posibilidades = getbuttons(posicionNula);
-            console.log(posibilidades);
+            //console.log(posibilidades);
             if (id == posibilidades[0] || id == posibilidades[1] || id == posibilidades[2] || id == posibilidades[3]) {
                     console.log("SI SE PUEDE REEMPLAZAR!");
                     document.getElementById(posicionNula).innerHTML = document.getElementById(id).innerHTML;     //NO ME PUEDO CREER QUE EN VEZ DE REEMPLAZAR TODO EL CONTENIDO SOLO REMPLAZABA LA ID DE LA IMAGEN POR ID DE POSICION XD
@@ -82,12 +82,14 @@ case 7:
     break;
     
 }
-const opciones = [opcion1, opcion2, opcion3, opcion4];
-console.log("Posibles Posiciones Clickables: " + opcion1 + " " + opcion2 + " " + opcion3 + " " + opcion4);  
-return opciones;
+        const opciones = [opcion1, opcion2, opcion3, opcion4];
+        console.log("Posibles Posiciones Clickables: " + opcion1 + " " + opcion2 + " " + opcion3 + " " + opcion4);  
+    return opciones;
 }
-/*
 
+
+
+/*
 boton1.addEventListener("click", function() {
     document.getElementById(document.getElementById("nulo").parentNode.id).innerHTML = "<img src='imgs/0"+boton1.id+".jpg'></img>"
     document.getElementById(boton1.id).innerHTML = "<img id = 'nulo' src='imgs/09.jpg'></img>";
