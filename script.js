@@ -15,11 +15,10 @@
             }else{
                 console.log("No se puede reemplazar la posición " + id + "  :(");
             }
+            if (comprobarPosiciones()){
+            console.log("FELICIDADES!!! COMPLETASTE EL PUZZLE, YIPPIE!!!")
+        }
         });
-
-
-        
-
     });
 
 function getbuttons(imagenNUla){
@@ -89,6 +88,24 @@ case 7:
         const opciones = [opcion1, opcion2, opcion3, opcion4];
         console.log("Posibles Posiciones Clickables: " + opcion1 + " " + opcion2 + " " + opcion3 + " " + opcion4);  
     return opciones;
+}
+
+
+function comprobarPosiciones() {
+    var posicionesincorrectas = "";
+for (i = 1; i < 10; i++) {
+    console.log(document.getElementById(i).currentTarget.id);
+    if(document.getElementById(i).currentTarget.id != "img"+ i){
+        posicionesincorrectas += document.getElementById(i).currentTarget.id + " // " + "img"+ i + ", ";
+    }
+}
+if(posicionesincorrectas != ""){
+    console.log(posicionesincorrectas);
+    return false;
+}else{
+    console.log("posiciones correctas");
+    return true;
+}
 }
 
 
