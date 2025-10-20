@@ -16,6 +16,10 @@
                 console.log("No se puede reemplazar la posición " + id + "  :(");
             }
         });
+
+
+        
+
     });
 
 function getbuttons(imagenNUla){
