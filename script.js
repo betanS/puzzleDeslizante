@@ -89,20 +89,22 @@ case 7:
         console.log("Posibles Posiciones Clickables: " + opcion1 + " " + opcion2 + " " + opcion3 + " " + opcion4);  
     return opciones;
 }
-
+//arrayCasillas=[1,2,3,4,5,6,7,8,9]
+//arrayImagenes["01.jpg", ...b]
 
 function comprobarPosiciones() {
     var posicionesincorrectas = "";
 for (i = 1; i < 10; i++) {
-    console.log(document.getElementById(i).currentTarget.id);
-    if(document.getElementById(i).currentTarget.id != "img"+ i){
-        posicionesincorrectas += document.getElementById(i).currentTarget.id + " // " + "img"+ i + ", ";
+    var imagen = document.getElementById(i).innerHTML
+    console.log(imagen.getAttribute("class").value);
+    if(imagen.getAttribute("class").value != i){
+        posicionesincorrectas += ""+i+"  is not " + imagen.getAttribute("class").value + ", ";
     }
 }
 if(posicionesincorrectas != ""){
     console.log(posicionesincorrectas);
     return false;
-}else{
+}else{  
     console.log("posiciones correctas");
     return true;
 }

@@ -1,16 +1,15 @@
 //assingRandomImgs()
 assingTestValues();
 
-
 function assingTestValues(){
-for (i = 1; i<= 10; i++) {
+for (i = 1; i< 10; i++) {
     if (document.getElementById(i).innerHTML == ""){
         if (i == 8){
-        document.getElementById(i).innerHTML = "<img id = 'nulo' src='imgs/09.jpg'></img>";
+        document.getElementById(i).innerHTML = "<img class = 'nulo' src='imgs/09.jpg'></img>";
         }else if (i == 9){
-            document.getElementById(i).innerHTML = "<img id = 'img8'src='imgs/08.jpg'></img>";
+            document.getElementById(i).innerHTML = "<img class= '8' src='imgs/08.jpg'></img>";
         }else{
-            document.getElementById(i).innerHTML = "<img id = 'img"+i+"' src='imgs/0"+i+".jpg'></img>";
+            document.getElementById(i).innerHTML = "<img class= '"+i+"' src='imgs/0"+i+".jpg'></img>";
         }
     };
 }
@@ -24,9 +23,9 @@ while (contador != 10) {
     numerorandom = getRandomInt(1, 10);
     if (document.getElementById(numerorandom).innerHTML == ""){
         if (contador == 9){
-        document.getElementById(numerorandom).innerHTML = "<img id = 'nulo' src='imgs/09.jpg'></img>";
+        document.getElementById(numerorandom).innerHTML = "<img class= 'nulo' src='imgs/09.jpg'></img>";
         }else{
-            document.getElementById(numerorandom).innerHTML = "<img id = 'img"+contador+"' src='imgs/0"+contador+".jpg'></img>";
+            document.getElementById(numerorandom).innerHTML = "<img class= '"+contador+"' src='imgs/0"+contador+".jpg'></img>";
         }
         contador++;
     };
