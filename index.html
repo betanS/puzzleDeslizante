@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+    <h1>Puzzle Deslizante</h1>
+    <p><i>(empieza el tiempo desde que refrescas la pagina, suerte)</i></p>
+<div id = "tiempo"></div>
+
+    <button id = "guardar">Guardar partida</button>
+    <button id = "cargar">Cargar partida</button>
     <table>
     <tr>
-    <td class = "botones" id = "1"> <img src="01.jpg"></td>
+    <td class = "botones" id = "1"></td>
     <td class = "botones" id = "2"></td>
     <td class = "botones" id = "3"></td>
   </tr>
@@ -25,8 +30,26 @@
     <td class = "botones" id = "9"></td>
   </tr>
     </table>
-    <!--<div id = 0>basuraparabotones</div>-->
-    <script src = "script.js"></script>
+    
+    <div id="leaderboard"><b>Leaderboard:</b></div>
+
+
+
+    <div id="modal" class="hidden">
+        <div class="modal-content">
+        <h2>FELICIDADES!!, COMPLETASTE EL PUZZLE</h2>
+        <h2>Porfavor, guarda tu record a continuacion</h2>
+        <p id="finalTime"></p>
+        <br>
+        <form action="">
+          <input type="text" id="nombreJugador" name="nombreJugador" placeholder="Ingresa tu nombre">
+        </form>
+        <button class= "my-button" id="guardarNombreJugador">Guardar Record</button>
+      </div>
+     </div>
+
+
+     <script src = "script.js"></script>
     <script src = "randomize.js"></script>
 </body>
 </html>
